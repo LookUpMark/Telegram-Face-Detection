@@ -20,7 +20,7 @@ This project implements a Telegram bot that performs real-time face detection us
 
 1. Clone this repository:
    ```
-   git clone https://github.com/LookUpMark/Telegram-Face-Detection
+   git clone https://github.com/LookUpMark/Telegram-Face-Detection.git
    cd Telegram-Face-Detection
    ```
 
