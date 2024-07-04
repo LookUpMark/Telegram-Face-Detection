@@ -31,7 +31,7 @@ This project implements a Telegram bot that performs real-time face detection us
 
 3. Set up your Telegram Bot Token:
    - Create a `.env` file in the project root
-   - Add the following line, replacing `YOUR_BOT_TOKEN` with your actual token:
+   - Modify the following line, replacing `YOUR_BOT_TOKEN` with your actual token:
      ```
      telegram_bot_token=YOUR_BOT_TOKEN
      ```
