@@ -33,7 +33,7 @@ This project implements a Telegram bot that performs real-time face detection us
    - Create a `.env` file in the project root
    - Add the following line, replacing `YOUR_BOT_TOKEN` with your actual token:
      ```
-     TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN
+     telegram_bot_token=YOUR_BOT_TOKEN
      ```
 
 ## Usage

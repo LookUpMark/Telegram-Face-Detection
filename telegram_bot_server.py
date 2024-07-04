@@ -156,7 +156,8 @@ def main() -> None:
     """
     Main function to set up and run the Telegram bot.
     """
-    application = Application.builder().token('YOUR_BOT_TOKEN').build()
+    telegram_bot_token = 'YOUR_BOT_TOKEN'
+    application = Application.builder().token(telegram_bot_token).build()
     application.add_handler(CommandHandler('start', start))
     application.add_handler(CommandHandler('stop', stop))
     application.run_polling()
