@@ -106,7 +106,7 @@ async def receive_loop(update):
     while running:
         try:
             image_data, client_addr = await receive_image(server_socket)
-            await update.message.reply_text(f'Received image from {client_addr}')
+            await update.message.reply_text(f'Face detected from {client_addr}')
             await update.message.reply_photo(image_data)
         except asyncio.CancelledError:
             break
