@@ -1,4 +1,4 @@
-# Telegram Face Detection Bot
+# Telegram Face Detection
 
 This project implements a Telegram bot that performs real-time face detection using a webcam. The system combines a Telegram bot server with integrated face detection capabilities.
 
