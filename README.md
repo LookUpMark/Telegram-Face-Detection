@@ -54,8 +54,3 @@ You can modify the following variables in `telegram_bot_server.py` to customize 
 - `SERVER_HOST` and `SERVER_PORT`: UDP server address (default: 'localhost', 12345)
 - `STOPPING_PORT`: TCP server port for stop signal (default: 12346)
 - `IMAGE_SEND_INTERVAL`: Minimum interval between image sends in seconds (default: 5)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
