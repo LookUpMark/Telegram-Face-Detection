@@ -15,12 +15,12 @@ class BotState:
         self.receive_task = None
         self.server_socket, self.stopping_socket = self.initialization()
 
-    def initialization(self):
+    def initialization(self, port1=12345, port2=12346):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        server_socket.bind(('localhost', 12345))
+        server_socket.bind(('localhost', port1))
         server_socket.setblocking(False)
         stopping_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        stopping_socket.bind(('localhost', 12346))
+        stopping_socket.bind(('localhost', port2))
         stopping_socket.listen(1)
         return server_socket, stopping_socket
 
