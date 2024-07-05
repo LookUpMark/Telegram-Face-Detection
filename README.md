@@ -53,6 +53,9 @@ You can modify the following variables in `telegram_bot_server.py` to customize 
 
 - `server_addr` and `server_port`: UDP server address (default: 'localhost', 12345)
 - `stopping_addr` and `stopping_port`: TCP server address (default: 'localhost', 12346)
+
+In `detector.py` you can modify the following variable:
+
 - `image_send_interval`: Minimum interval between image sends in seconds (default: 5)
 
 ## License
