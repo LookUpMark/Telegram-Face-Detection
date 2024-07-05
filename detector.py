@@ -45,7 +45,7 @@ def stopping():
     stopping_socket.close()
 
 
-def send_image(frame, client_socket, server_addr):
+def send_image(frame, client_socket, server_addr, image_send_interval=5):
     """
     Send an image to the UDP server if 5 seconds have passed since the last send.
 
@@ -53,11 +53,12 @@ def send_image(frame, client_socket, server_addr):
         frame (numpy.ndarray): The image frame to send.
         client_socket (socket.socket): The UDP client socket.
         server_addr (tuple): The address of the UDP server.
+        image_send_interval (int, optional): The interval in seconds between image sends. Defaults to 5.
     """
     global last_sent_time
     current_time = time.time()
 
-    if current_time - last_sent_time < 5:
+    if current_time - last_sent_time < image_send_interval:
         return  # Don't send if less than 5 seconds have passed since the last send
 
     img_bytes = cv2.imencode('.jpg', frame)[1].tobytes()

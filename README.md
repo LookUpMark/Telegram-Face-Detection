@@ -51,9 +51,9 @@ This project implements a Telegram bot that performs real-time face detection us
 
 You can modify the following variables in `telegram_bot_server.py` to customize behavior:
 
-- `SERVER_HOST` and `SERVER_PORT`: UDP server address (default: 'localhost', 12345)
-- `STOPPING_HOST` and `STOPPING_PORT`: TCP server address (default: 'localhost', 12346)
-- `IMAGE_SEND_INTERVAL`: Minimum interval between image sends in seconds (default: 5)
+- `server_addr` and `server_port`: UDP server address (default: 'localhost', 12345)
+- `stopping_addr` and `stopping_port`: TCP server address (default: 'localhost', 12346)
+- `image_send_interval`: Minimum interval between image sends in seconds (default: 5)
 
 ## License
 
