@@ -27,6 +27,7 @@ class BotState:
 
 async def receive_image(server_socket):
     image_data = b""
+    client_addr = None
     while True:
         try:
             packet, client_addr = await asyncio.get_running_loop().sock_recvfrom(server_socket, 65535)
