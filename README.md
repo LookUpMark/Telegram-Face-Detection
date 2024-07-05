@@ -7,7 +7,7 @@ This project implements a Telegram bot that performs real-time face detection us
 - Real-time face detection using OpenCV
 - Telegram bot interface for starting and stopping the detection process
 - Sends images with detected faces to a Telegram chat every 5 seconds
-- Configurable via environment variables
+- Configurable via variables
 
 ## Prerequisites
 
